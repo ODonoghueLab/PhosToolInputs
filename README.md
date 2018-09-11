@@ -2,6 +2,57 @@
 
 Provided in this repository are input files required for the various tools.
 
+
+<table> 
+	<th>
+		<td> File name 
+		</td>
+		<td> Information
+		</td>
+		<td> Tool link 
+		</td>
+	</th>
+	<tr> 
+		<td> 
+			DiBS/Dibsvis.csv 
+		</td>
+		<td> 
+			Csv file input file for use with the DiBS tool 
+		</td>
+		<td> 
+			[DiBS](http://www.dibsvis.com)
+		</td>
+	</tr>
+	<tr> 
+		<td> 
+			DynaPho/Dynapho.txt
+		</td>
+		<td> 
+			Tab separated file for use with the DynaPho tool 
+		</td>
+		<td> 
+			[DynaPho](http://140.112.52.89/dynapho/)
+		</td>
+	</tr>
+	<tr> 
+		<td> 
+			<ol> 
+				<li> PhosphoPath/PhosphoPath_network.txt </li>
+				<li> PhosphoPath/PhosphoPath_tps.txt </li>
+			</ol>
+		</td>
+		<td> 
+			<ol>
+				<li> Tab separated file for proteins and their sites </li>
+				<li> Tab separated file for the quantified values at various time points </li>
+			</ol>
+		</td>
+		<td> 
+			[Cytoscape tool](http://www.cytoscape.org), [PhosphoPath plugin](http://apps.cytoscape.org/apps/phosphopath)
+		</td>
+	</tr>
+</table>
+		I
 File name | Information | Tool link 
 --- | --- | ---
 DiBS/Dibsvis.csv | Csv file required for use with the DiBS tool | [DiBS](http://www.dibsvis.com)
