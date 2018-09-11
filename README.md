@@ -20,7 +20,7 @@ Provided in this repository are input files required for the various tools.
 			Csv file input file for use with the DiBS tool 
 		</td>
 		<td> 
-			[DiBS](http://www.dibsvis.com)
+			<a href="http://www.dibsvis.com">DiBS</a>
 		</td>
 	</tr>
 	<tr> 
@@ -31,7 +31,7 @@ Provided in this repository are input files required for the various tools.
 			Tab separated file for use with the DynaPho tool 
 		</td>
 		<td> 
-			[DynaPho](http://140.112.52.89/dynapho/)
+			<a href="http://140.112.52.89/dynapho/"> DynaPho </a>
 		</td>
 	</tr>
 	<tr> 
@@ -48,11 +48,11 @@ Provided in this repository are input files required for the various tools.
 			</ol>
 		</td>
 		<td> 
-			[Cytoscape tool](http://www.cytoscape.org), [PhosphoPath plugin](http://apps.cytoscape.org/apps/phosphopath)
+			<a href="http://www.cytoscape.org"> Cytoscape tool </a>, <a href="http://apps.cytoscape.org/apps/phosphopath"> PhosphoPath plugin </a>
 		</td>
 	</tr>
 </table>
-		I
+	
 File name | Information | Tool link 
 --- | --- | ---
 DiBS/Dibsvis.csv | Csv file required for use with the DiBS tool | [DiBS](http://www.dibsvis.com)
