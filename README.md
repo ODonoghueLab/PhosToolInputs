@@ -7,7 +7,7 @@ Provided in this repository are input files required for the various tools.
 	<tr>
 		<th> File name 
 		</th>
-		<th> Information
+		<th> Comment
 		</th>
 		<th> Tool link 
 		</th>
@@ -38,7 +38,7 @@ Provided in this repository are input files required for the various tools.
 		<td> 
 			<ol> 
 				<li> PhosphoPath/PhosphoPath_network.txt </li>
-				<li> PhosphoPath/PhosphoPath_tps.txt </li>
+				<li> PhosphoPath/PhosphoPath_timeseries.txt </li>
 			</ol>
 		</td>
 		<td> 
@@ -70,15 +70,10 @@ Provided in this repository are input files required for the various tools.
 			Basic insulin signalling model in kappa format 
 		</td>
 		<td> 
-			<a href="https://tools.kappalanguage.org/try/?model=https%3A//raw.githubusercontent.com/Kappa-Dev/KaSim/master/models/abc-pert.ka"> Kappa online tool </a>
+			<a href="https://tools.kappalanguage.org/try/?model=https%3A//raw.githubusercontent.com/Kappa-Dev/KaSim/master/models/abc-pert.ka"> Kappa online tool </a>, 
 			<a href="https://kappalanguage.org"> Kappa language home page </a>
 		</td>
 	</tr>
 </table>
 	
-File name | Information | Tool link 
---- | --- | ---
-DiBS/Dibsvis.csv | Csv file required for use with the DiBS tool | [DiBS](http://www.dibsvis.com)
-DynaPho/Dynapho.txt | Tab separated file for use with the DynaPho tool | [DynaPho](http://140.112.52.89/dynapho/)
-<ol> <li> PhosphoPath/PhosphoPath_network.txt </li> <li> PhosphoPath/PhosphoPath_tps.txt </li> </ol> | <ol> <li> Tab separated file for proteins and their sites </li> <li> Tab separated file for the quantified values at various time points </li> </ol>
-Kappa/InsulinSignallingModel.ka | Basic insulin signalling model in kappa format | [Kappa online tool](https://tools.kappalanguage.org/try/?model=https%3A//raw.githubusercontent.com/Kappa-Dev/KaSim/master/models/abc-pert.ka) [Kappa language home page](https://kappalanguage.org)
+

@@ -1,0 +1,109 @@
+%agent: ins(x)
+%agent: insr(y989{u p}, y1175{u p}, y1179{u p}, y1180{u p}, alpha)
+%agent: irs1(insrBS, y460{u p}, y608{u p}, y628{u p}, y891{u p}, y935{u p}, y983{u p}, y1171{u p}, y1218{u p})
+%agent: pik3ca(bindIRSs1, bindIRSs2)
+%agent: shc1(y423{u p})
+%agent: grb2(bindS1, bindS2, bindSos)
+%agent: sos(bindGrb)
+%agent: ras(bindS1, bindS2)
+%agent: GDP(bind)
+%agent: GTP(bind)
+%agent: raf1(bindS1)
+%agent: map2k1(s218{u p}, s222{u p})
+%agent: map2k2(s222{u p}, s226{u p})
+%agent: erk1(t203{u p}, y205{u p})
+%agent: erk2(t183{u p}, y185{u p})
+
+'ins_insr_binding' ins(x[.]), insr(alpha[.]) -> ins(x[1]), insr( alpha[1]) @ 1
+'insr989_autophos' insr(alpha[_], y989{u}) -> insr(alpha[_], y989{p}) @ 1
+'insr1175_autophos' insr(alpha[_], y1175{u}) -> insr(alpha[_], y1175{p}) @ 1
+'insr1179_autophos' insr(alpha[_], y1175{p}, y1179{u}) -> insr( alpha[_], y1175{p}, y1179{p}) @ 1
+'insr1180_autophos' insr(alpha[_], y1175{p}, y1180{u}) -> insr( alpha[_], y1175{p}, y1180{p}) @ 1
+
+
+'insr_irs1_binding' insr(y989{p}[.], y1175{p}, y1179{p}, y1180{p}),irs1(insrBS[.]) -> insr(y989{p}[1], y1175{p}, y1179{p}, y1180{p}), irs1(insrBS[1]) @ 1
+
+'irs1_y460' insr(y989{p}[1], y1175{p}, y1179{p}, y1180{p}),irs1(insrBS[1], y460{u}) -> insr(y989{p}[1], y1175{p}, y1179{p}, y1180{p}), irs1(insrBS[1], y460{p}) @ 1
+
+'irs1_y608' insr(y989{p}[1], y1175{p}, y1179{p}, y1180{p}),irs1(insrBS[1], y608{u}) -> insr(y989{p}[1], y1175{p}, y1179{p}, y1180{p}), irs1(insrBS[1], y608{p}) @ 1
+
+'irs1_y628' insr(y989{p}[1], y1175{p}, y1179{p}, y1180{p}),irs1(insrBS[1], y628{u}) -> insr(y989{p}[1], y1175{p}, y1179{p}, y1180{p}), irs1(insrBS[1], y628{p}) @ 1
+
+'irs1_y891' insr(y989{p}[1], y1175{p}, y1179{p}, y1180{p}),irs1(insrBS[1], y891{u}) -> insr(y989{p}[1], y1175{p}, y1179{p}, y1180{p}), irs1(insrBS[1], y891{p}) @ 1
+
+'irs1_y935' insr(y989{p}[1], y1175{p}, y1179{p}, y1180{p}),irs1(insrBS[1], y935{u}) -> insr(y989{p}[1], y1175{p}, y1179{p}, y1180{p}), irs1(insrBS[1], y935{p}) @ 1
+
+
+'irs1_y983' insr(y989{p}[1], y1175{p}, y1179{p}, y1180{p}),irs1(insrBS[1], y983{u}) -> insr(y989{p}[1], y1175{p}, y1179{p}, y1180{p}), irs1(insrBS[1], y983{p}) @ 1
+
+'irs1_y1171' insr(y989{p}[.], y1175{p}, y1179{p}, y1180{p}),irs1( insrBS[.], y1171{u}) -> insr(y989{p}[1], y1175{p}, y1179{p}, y1180{p}), irs1(insrBS[1], y1171{p}) @ 1
+
+'irs1_y1218' insr(y989{p}[.], y1175{p}, y1179{p}, y1180{p}),irs1(insrBS[.], y1218{u}) -> insr(y989{p}[1], y1175{p}, y1179{p}, y1180{p}), irs1(insrBS[1], y1218{p}) @ 1
+
+'irs1_grb2' irs1(y891{p}[.]), grb2(bindS1[.]) -> irs1(y891{p}[1]), grb2(bindS1[1]) @ 1
+
+'shc1_y423' insr(y1175{p}, y1179{p}, y1180{p}), shc1(y423{u}) -> insr(y1175{p}, y1179{p}, y1180{p}), shc1(y423{p}) @ 1
+
+'shc1_grb2' shc1(y423{p}[.]), grb2(bindS1[_], bindS2[.]) -> shc1(y423{p}[1]), grb2(bindS1[_], bindS2[1]) @ 1
+
+'grb2_sos' grb2(bindS2[_], bindSos[.]), sos(bindGrb[.]) -> grb2(bindS2[_], bindSos[2]), sos(bindGrb[2]) @ 1
+
+'sos_GDP' sos(bindGrb[_]), ras(bindS1[1]), GDP(bind[1]) -> sos(bindGrb[_]), ras(bindS1[.]), GDP(bind[.]) @ 1
+
+'ras_GTP' sos(bindGrb[_]), ras(bindS1[.]), GTP(bind[.]) -> sos(bindGrb[_]), ras(bindS1[1]), GTP(bind[1]) @ 1
+
+'ras_raf1' ras(bindS1[1], bindS2[.]), GTP(bind[1]), raf1(bindS1[.]) -> ras(bindS1[1], bindS2[2]), GTP(bind[1]), raf1(bindS1[2]) @ 1
+
+'map2k1_s218' raf1(bindS1[_]), map2k1(s218{u}) -> raf1(bindS1[_]), map2k1(s218{p}) @ 1
+
+'raf1_map2k1' raf1(bindS1[_]), map2k1(s222{u}) -> raf1(bindS1[_]), map2k1(s222{p}) @ 1
+
+'map2k2_s222' raf1(bindS1[_]), map2k2(s222{u}) -> raf1(bindS1[_]), map2k2(s222{p}) @ 1
+
+'raf1_map2k2' raf1(bindS1[_]), map2k2(s226{u}) -> raf1(bindS1[_]), map2k2(s226{p}) @ 1
+
+'erk1_t203' map2k1(s218{p}, s222{p}), erk1(t203{u}) -> map2k1(s218{p}, s222{p}), erk1(t203{p}) @ 1
+
+'erk1_y205' map2k1(s218{p}, s222{p}), erk1(y205{u}) -> map2k1(s218{p}, s222{p}), erk1(y205{p}) @ 1
+
+'erk2_t183' map2k1(s218{p}, s222{p}), erk2(t183{u}) -> map2k1(s218{p}, s222{p}), erk2(t183{p}) @ 1
+
+'erk2_y185' map2k1(s218{p}, s222{p}), erk2(y185{u}) -> map2k1(s218{p}, s222{p}), erk2(y185{p}) @ 1
+
+'erk1_t203_b' map2k2(s222{p}, s226{p}), erk1(t203{u}) -> map2k2(s222{p}, s226{p}), erk1(t203{p}) @ 1
+
+'erk1_y205_b' map2k2(s222{p}, s226{p}), erk1(y205{u}) -> map2k2(s222{p}, s226{p}), erk1(y205{p}) @ 1
+
+'erk2_t183_b' map2k2(s222{p}, s226{p}), erk2(t183{u}) -> map2k2(s222{p}, s226{p}), erk2(t183{p}) @ 1
+
+'erk2_y185_b' map2k2(s222{p}, s226{p}), erk2(y185{u}) -> map2k2(s222{p}, s226{p}), erk2(y185{p}) @ 1
+
+
+
+%obs: 'insr' |insr(y1175{p})|
+%obs: 'erk1' |erk1(t203{p})|
+
+
+
+%init: 10 ins ()
+%init: 10 insr(y989{u}, y1175{u}, y1179{u}, y1180{u})
+%init: 10 irs1(insrBS, y460{u}, y608{u}, y628{u}, y891{u}, y935{u}, y983{u}, y1171{u}, y1218{u})
+%init: 10 pik3ca ()
+%init: 10 shc1(y423{u})
+%init: 10 grb2 ()
+%init: 10 sos ()
+%init: 10 ras(bindS1[1]), GDP(bind[1])
+%init: 1000 GTP ()
+%init: 10 raf1()
+%init: 10 map2k1(s218{u}, s222{u})
+%init: 10 map2k2(s222{u}, s226{u})
+%init: 10 erk1(t203{u}, y205{u})
+%init: 10 erk2(t183{u}, y185{u})
+
+
+
+
+
+
+
+
