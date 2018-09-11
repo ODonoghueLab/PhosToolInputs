@@ -4,14 +4,14 @@ Provided in this repository are input files required for the various tools.
 
 
 <table> 
-	<th>
-		<td> File name 
-		</td>
-		<td> Information
-		</td>
-		<td> Tool link 
-		</td>
-	</th>
+	<tr>
+		<th> File name 
+		</th>
+		<th> Information
+		</th>
+		<th> Tool link 
+		</th>
+	</tr>
 	<tr> 
 		<td> 
 			DiBS/Dibsvis.csv 
