@@ -31,7 +31,7 @@ Provided in this repository are input files required for the various tools.
 			Tab separated file for use with the DynaPho tool 
 		</td>
 		<td> 
-			<a href="http://140.112.52.89/dynapho/"> DynaPho </a>
+			<a href="http://140.112.52.89/dynapho/"> DynaPho web tool </a>
 		</td>
 	</tr>
 	<tr> 
@@ -49,6 +49,29 @@ Provided in this repository are input files required for the various tools.
 		</td>
 		<td> 
 			<a href="http://www.cytoscape.org"> Cytoscape tool </a>, <a href="http://apps.cytoscape.org/apps/phosphopath"> PhosphoPath plugin </a>
+		</td>
+	</tr>
+	<tr> 
+		<td> 
+			Phoxtrack/Phoxtrack.txt
+		</td>
+		<td> 
+			Tab separated file for use with the PHOXTRACK tool
+		</td>
+		<td> 
+			<a href="http://phoxtrack.molgen.mpg.de"> PHOXTRACK web tool </a>
+		</td>
+	</tr>
+	<tr> 
+		<td>
+			Kappa/InsulinSignallingModel.ka 
+		</td>
+		<td> 
+			Basic insulin signalling model in kappa format 
+		</td>
+		<td> 
+			<a href="https://tools.kappalanguage.org/try/?model=https%3A//raw.githubusercontent.com/Kappa-Dev/KaSim/master/models/abc-pert.ka"> Kappa online tool </a>
+			<a href="https://kappalanguage.org"> Kappa language home page </a>
 		</td>
 	</tr>
 </table>
