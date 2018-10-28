@@ -106,3 +106,8 @@ The python script can be run as:
 ```python3 getTpPhosData.py phosphopath_input.tab > PhophoPath_timeseries.txt```
 
 
+## References
+
+1. Humphrey SJ, Yang G, Yang P, Fazakerley DJ, Stöckli J, Yang JY, James DE. Dynamic adipocyte phosphoproteome reveals that Akt directly regulates mTORC2. Cell metabolism. 2013 Jun 4;17(6):1009-20.
+
+
