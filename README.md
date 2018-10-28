@@ -89,7 +89,7 @@ Provided in this repository are input files required for the various tools.
 	<tr>
 		<td> Original.txt
 		</td>
-		<td> Original data points from Humphrey <i> et al. </i> [1].
+		<td> Original 103 profiles from Humphrey <i> et al. </i> [1].
 		</td>
 	</tr>
 	<tr>
