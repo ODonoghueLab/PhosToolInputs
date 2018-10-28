@@ -95,7 +95,7 @@ Provided in this repository are input files required for the various tools.
 	<tr>
 		<td> getTpPhosData.py, phosphopath_input.tab
 		</td>
-		<td> Python and an input file, to re-generate PhophoPath_timeseries.txt. 
+		<td> Python script and input file, respectively, to re-generate PhophoPath_timeseries.txt. 
 		</td>
 	</tr>
 </table>
