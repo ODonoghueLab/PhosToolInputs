@@ -77,3 +77,31 @@ Provided in this repository are input files required for the various tools.
 </table>
 	
 
+## Additional files
+
+<table> 
+	<tr>
+		<th> File name 
+		</th>
+		<th> Comment
+		</th>
+	</tr>
+	<tr>
+		<th> Original.txt
+		</th>
+		<th> Original data points from Humphrey <i> et al. </i> [1].
+		</th>
+	</tr>
+		<tr>
+		<th> getTpPhosData.py, phosphopath_input.tab
+		</th>
+		<th> Python and an input file, to re-generate PhophoPath_timeseries.txt. 
+		</th>
+	</tr>
+</table>
+
+
+The python script can be run as: 
+```python3 getTpPhosData.py phosphopath_input.tab > PhophoPath_timeseries.txt```
+
+
