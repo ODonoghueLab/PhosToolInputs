@@ -98,6 +98,12 @@ Provided in this repository are input files required for the various tools.
 		<td> Python script and input file, respectively, to re-generate PhophoPath_timeseries.txt. 
 		</td>
 	</tr>
+	<tr>
+		<td> Kinase_assignments.xlsx
+		</td>
+		<td> Excel file containing the kinase assignments, where knownw, for the 103 profile.
+		</td>
+	</tr>
 </table>
 
 
