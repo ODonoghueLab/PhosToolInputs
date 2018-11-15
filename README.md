@@ -101,7 +101,7 @@ Provided in this repository are input files required for the various tools.
 	<tr>
 		<td> Kinase_assignments.xlsx
 		</td>
-		<td> Excel file containing the kinase assignments, where knownw, for the 103 profile.
+		<td> Excel file containing the kinase assignments, where known, for the 103 profiles [1,2].
 		</td>
 	</tr>
 </table>
@@ -115,5 +115,6 @@ The python script can be run as:
 ## References
 
 1. Humphrey SJ, Yang G, Yang P, Fazakerley DJ, Stöckli J, Yang JY, James DE. Dynamic adipocyte phosphoproteome reveals that Akt directly regulates mTORC2. Cell metabolism. 2013 Jun 4;17(6):1009-20.
+2. Ma DK, Stolte C, Krycer JR, James DE, O’Donoghue SI. SnapShot: insulin/IGF1 signaling. Cell. 2015 May 7;161(4):948.
 
 
